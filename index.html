@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Diana Buts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page">
+
+  <header class="header">
+    <h1 class="header__title">Diana Buts</h1>
+    <h2 class="header__subtitle">Front-end Developer</h2>
+    <p class="header__contact"><strong>Phone:</strong> +380665253328</p>
+    <p class="header__contact"><strong>Email:</strong> hrystyna8421@gmail.com</p>
+    <div class="theme-toggle">
+      <label>
+        <input type="checkbox" id="theme-switch"> Toggle Dark Mode
+      </label>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+      <section id="skills" class="section skills">
+        <h2 class="section__title">Skills</h2>
+
+        <h3 class="section__subtitle">Hard Skills</h3>
+        <p class="section__text"><strong>Familiar with:</strong></p>
+        <ul class="list skills__list">
+          <li class="list__item">HTML & CSS</li>
+          <li class="list__item">Bootstrap</li>
+          <li class="list__item">SCRUM</li>
+          <li class="list__item">JavaScript (ES6+)</li>
+          <li class="list__item">React</li>
+          <li class="list__item">Responsive web design</li>
+          <li class="list__item">Git/GitHub</li>
+        </ul>
+
+        <p class="section__text"><strong>Basic knowledge of:</strong></p>
+        <ul class="list skills__list">
+          <li class="list__item">PHP</li>
+          <li class="list__item">Symfony</li>
+          <li class="list__item">React Native</li>
+          <li class="list__item">MySQL, PostgreSQL</li>
+          <li class="list__item">REST API</li>
+          <li class="list__item">OOP, OOD</li>
+        </ul>
+
+        <h3 class="section__subtitle">Soft Skills</h3>
+        <ul class="list skills__list">
+          <li class="list__item">Teamwork</li>
+          <li class="list__item">High learnability</li>
+          <li class="list__item">Attention to detail</li>
+          <li class="list__item">Flexibility</li>
+          <li class="list__item">Problem solving</li>
+        </ul>
+      </section>
+
+      <section id="languages" class="section languages">
+        <h2 class="section__title">Languages</h2>
+        <p class="section__text"><strong>Ukrainian:</strong> Native speaker</p>
+        <p class="section__text"><strong>English:</strong> B1 (Intermediate)</p>
+      </section>
+    </aside>
+
+    <main class="main">
+      <section id="summary" class="section summary">
+        <h2 class="section__title">Summary of Qualifications</h2>
+        <p class="section__text">
+          I possess knowledge of web technologies and focus on creating secure, user-friendly interfaces.
+          Skilled in building dynamic web applications using HTML5, CSS3, JavaScript and React.
+        </p>
+      </section>
+
+      <section id="experience" class="section experience">
+        <h2 class="section__title">Experience</h2>
+        <p class="section__text"><strong>Junior Front-end Developer</strong><br> GeniusDev (May 2024 – November 2024)</p>
+        <p class="section__text"><strong>Project:</strong> Online school (Mental Arithmetic)</p>
+        <p class="section__text"><strong>Responsibilities:</strong></p>
+        <ul class="list experience__list">
+          <li class="list__item">Frontend development</li>
+          <li class="list__item">Worked with PHP (Symfony), Twig, MySQL, JS (jQuery), Bootstrap</li>
+          <li class="list__item">Agile development using SCRUM</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section projects">
+        <h2 class="section__title">IT-Related Educational Practice</h2>
+        <ul class="list projects__list">
+          <li class="list__item">Developed a mobile application "BuildMe"</li>
+          <li class="list__item">Contributed to the development of a mythology-themed website</li>
+          <li class="list__item">Developed a section of a website during training courses</li>
+        </ul>
+      </section>
+
+      <section id="education" class="section education">
+        <h2 class="section__title">Education</h2>
+        <p class="section__text"><strong>Lviv Polytechnic National University</strong><br> Cybersecurity (September 2022 – June 2026)</p>
+        <p class="section__text"><strong>Educational and Research Institute of Spatial Planning and Advanced Technologies</strong><br> Computer Sciences (September 2020 – June 2024)</p>
+      </section>
+
+      <section id="additional-education" class="section additional-education">
+        <h2 class="section__title">Additional Education</h2>
+        <p class="section__text"><strong>SoftServe Academy Courses:</strong></p>
+        <ul class="list additional-education__list">
+          <li class="list__item">HTML5/CSS3/JavaScript Fundamentals</li>
+          <li class="list__item">JavaScript Fundamentals</li>
+          <li class="list__item">Database Fundamentals</li>
+          <li class="list__item">DevOps for Developers</li>
+          <li class="list__item">Practical React</li>
+        </ul>
+      </section>
+
+      <section id="hobbies" class="section hobbies">
+        <h2 class="section__title">Hobbies</h2>
+        <ul class="list hobbies__list">
+          <li class="list__item">Travelling</li>
+          <li class="list__item">Reading</li>
+          <li class="list__item">Photography</li>
+          <li class="list__item">Baking</li>
+        </ul>
+      </section>
+
+      <section id="comments" class="section">
+        <h2 class="section__title">Comments from Employers</h2>
+        <ul id="comments-list" class="list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer" id="footer-info">
+    <p class="footer__text">&copy; 2024 Diana Buts. All rights reserved.</p>
+  </footer>
+
+  <div id="feedback-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" id="close-modal">&times;</span>
+      <h2>Give us feedback</h2>
+      <form action="https://formspree.io/f/xjkwglla" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
